@@ -1,0 +1,538 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden !important;
+}
+
+.main {
+  background-color: #f0f0f0 !important;
+  height: 100vh;
+}
+
+.logo {
+  height: 45px;
+  width: 85%;
+}
+
+.chat-main {
+  height: 70vh;
+  overflow: auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav {
+  box-shadow: 1px 1px 3px #777;
+}
+
+.navsearch {
+  width: 400px !important;
+  height: 45px !important;
+}
+
+.metadata-value {
+  color: #343741;
+  font-weight: normal;
+  padding-left: 5px;
+
+}
+
+.metadata-label {
+  color: #777;
+}
+
+.divider {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #aaaaaa;
+}
+
+
+.search-box {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.search-input {
+  position: fixed;
+  bottom: 40px;
+}
+
+.ss-search::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.ss-search:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.ss-search {
+  resize: none;
+  width: 65rem;
+  height: 45px;
+  background: #fff;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  padding-right: 35px;
+  line-height: 1.5rem;
+
+  &:hover,
+  &:focus-visible {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.14), 0px 1px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    border: none !important;
+    outline: none !important;
+  }
+}
+
+textarea {
+  max-height: 200px;
+  min-height: 24px;
+  height: 30px;
+  overflow-y: hidden;
+  word-wrap: break-word;
+  resize: none;
+  padding-right: 42px;
+  padding-left: 14px;
+  padding-top: 20px;
+}
+
+.send-icon {
+  margin-top: 12px;
+  position: absolute;
+  right: 10px;
+}
+
+.ques-tag {
+
+  padding: 8px 8px;
+  border-radius: 40px 37px 4px 40px;
+  margin-top: 20px;
+  font-size: 14px;
+  box-shadow: 0 0px 4px 1px #ffd20a;
+  /* box-shadow: 0px 0px 10px 0px rgba(38, 73, 170, 0.25); */
+  /* box-shadow: 0px 0px 12px 0px rgb(170 166 38 / 25%); */
+  margin-bottom: 14px;
+  background-color: white;
+
+}
+
+.sent-message {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+
+  min-height: 60px;
+}
+
+.profile-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-left: 20px;
+  position: initial;
+  /* margin-top: 15px; */
+}
+
+.textarea-containers {
+  height: 40px !important;
+}
+
+.prompt-textarea-container {
+  /* Styles for the element */
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  box-shadow: 0 0 15px #ffd20a;
+  ;
+  box-sizing: border-box;
+  color-scheme: light;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  /* height: 60px; */
+  line-height: 38px;
+  padding: 10px 0;
+  position: relative;
+  tab-size: 4;
+  -webkit-font-smoothing: antialiased;
+  left: 50%;
+  transform: translate(-50%, 0);
+  vertical-align: middle;
+  position: fixed;
+  bottom: 30px;
+  width: 82%;
+  z-index: 1;
+  --tw-shadow: 0 0 15px rgba(0, 0, 0, .1);
+  --tw-shadow-colored: 0 0 15px var(--tw-shadow-color);
+}
+
+.text-input {
+  /* Styles for the element */
+  width: 100%;
+  appearance: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 0;
+  color: #000;
+  color-scheme: light;
+  column-count: auto;
+  cursor: text;
+  display: block;
+  height: 38px;
+  margin: 0;
+  max-height: 200px;
+  overflow-wrap: break-word;
+  overflow-y: hidden;
+  padding: 0px 40px 0 70px;
+  resize: none;
+  tab-size: 4;
+  text-align: start;
+  text-indent: 0;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  white-space-collapse: preserve;
+  word-spacing: 0;
+  writing-mode: horizontal-tb;
+  -webkit-font-smoothing: antialiased;
+  line-height: 24px;
+  margin-top: -29px;
+  max-height: 200px;
+  height: 60px;
+  overflow-y: auto;
+
+}
+
+.text-input:focus {
+
+  outline: none;
+}
+
+.img-button {
+  /* Styles for the element */
+  align-items: flex-start;
+  appearance: button;
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #acacee;
+  color-scheme: light;
+  cursor: default;
+  display: block;
+  height: 32px;
+  letter-spacing: normal;
+  line-height: 30px;
+  margin: 0;
+  /* opacity: 0.4; */
+  padding: 4px;
+  position: absolute;
+  left: 10px;
+  bottom: 31px;
+  tab-size: 4;
+  text-align: center;
+  text-indent: 0;
+  text-rendering: auto;
+  text-shadow: none;
+  text-size-adjust: 100%;
+  text-transform: none;
+  transition: color 0.15s, background-color 0.15s, border-color 0.15s, text-decoration-color 0.15s, fill 0.15s, stroke 0.15s;
+  width: 32px;
+  word-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.send-button {
+  /* Styles for the element */
+  align-items: flex-start;
+  appearance: button;
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #acacee;
+  color-scheme: light;
+  cursor: default;
+  display: block;
+  height: 32px;
+  letter-spacing: normal;
+  line-height: 30px;
+  margin: 0;
+  opacity: 0.4;
+  padding: 4px;
+  position: absolute;
+  right: 10px;
+  bottom: 17px;
+  tab-size: 4;
+  text-align: center;
+  text-indent: 0;
+  text-rendering: auto;
+  text-shadow: none;
+  text-size-adjust: 100%;
+  text-transform: none;
+  transition: color 0.15s, background-color 0.15s, border-color 0.15s, text-decoration-color 0.15s, fill 0.15s, stroke 0.15s;
+  width: 32px;
+  word-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.inter-steps {
+  border-radius: 25px;
+  background: #F6F6F6;
+  box-shadow: 0px 0px 10px 0px rgba(38, 73, 170, 0.25);
+
+  flex-shrink: 0;
+  margin: 0 10px;
+  margin-bottom: 15px;
+}
+
+.display-img {
+  left: 0px;
+  position: relative
+}
+
+.close-icon {
+  display: inline;
+  position: relative;
+  z-index: 11111;
+  left: 35%;
+  bottom: 84px;
+  font-size: 24px;
+  cursor: pointer;
+  /* color: #ffd20a */
+}
+
+.preview-img {
+  /* max-width: 64px !important;
+  max-height: 60px !important; */
+  position: relative;
+  left: 59px;
+  /* bottom: 59px; */
+}
+
+/* .inter-steps> :first-child {
+  padding-top: 10px;
+}
+
+.inter-steps> :last-child {
+  padding-bottom: 10px;
+} */
+.button-upload {
+  border: 0;
+  background-color: transparent;
+  filter: brightness(0);
+  padding-left: 20px;
+}
+
+.inter-step-div {
+
+  color: #818181;
+  /* font: 400 13px/normal -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; */
+  padding: 8px 8px 8px 15px;
+  /* Top, Right, Bottom, Left */
+}
+
+.chat-messages {
+  padding: 23px 50px;
+}
+
+.inter-step-div span {
+  padding: 8px 8px;
+  border-radius: 40px 40px 40px 40px;
+  margin-top: 20px;
+  font-size: 14px;
+
+  box-shadow: 0px 0px 10px 0px rgba(38, 73, 170, 0.25);
+  color: #818181;
+  margin-bottom: 14px;
+  background-color: white;
+  /* padding-left: 7px; */
+}
+
+/* 
+.dropdown-toggle {
+  color: #605959 !important;
+    padding-top: 20px !important;
+    font-size: 20px !important;
+} */
+.nav-link {
+  color: #000 !important;
+  padding-top: 20px !important;
+  font-size: 16px !important;
+  margin-left: -53px;
+  font-weight: 600 !important;
+}
+
+.actionselect {
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.176);
+  padding: 5px 0px 5px 10px;
+  font-weight: 500;
+
+}
+
+.dropdown-item:active {
+  color: #000 !important;
+  background-color: transparent !important;
+}
+
+.actionselect:hover {
+  background-color: #ffd20a;
+
+}
+
+.scrollable-content {
+  width: 100%;
+  height: 200px;
+  overflow: auto;
+  scrollbar-width: thin;
+  -ms-overflow-style: none;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  height: 1rem;
+  width: .5rem
+}
+
+::-webkit-scrollbar:horizontal {
+  height: .5rem;
+  width: 1rem
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 9999px
+}
+
+::-webkit-scrollbar-thumb {
+  --tw-border-opacity: 1;
+  background-color: rgba(217, 217, 227, .8);
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  border-radius: 9999px;
+  border-width: 1px
+}
+
+::-webkit-scrollbar-thumb:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(236, 236, 241, var(--tw-bg-opacity))
+}
+
+@media (min-width:768px) {
+  .scrollbar-trigger ::-webkit-scrollbar-thumb {
+    visibility: hidden
+  }
+
+  .scrollbar-trigger:hover ::-webkit-scrollbar-thumb {
+    visibility: visible
+  }
+}
+
+.input_fileupload--hidden {
+  display: none;
+}
+
+.filetype {
+  border: 1px solid #000;
+  width: 250px;
+  margin-left: 60px;
+  padding-left: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0px 1px 1px #ffd20a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  height: 45px;
+}
+
+.filetypeicon {
+  margin-left: 10px;
+  margin-right: auto;
+  font-size: 24px;
+  position: relative;
+
+}
+
+.chathistory {
+  background-color: #ebeded;
+
+}
+
+.newchat {
+  margin: 7px 8px;
+  border: 1px solid rgba(0, 0, 0, 0.176);
+  border-radius: 4px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.chatspan {
+  padding: 10px;
+  color: #000;
+  font-weight: 600;
+}
+
+/* //materialUi customized css */
+.MuiMenu-paper {
+  top: 47px !important;
+}
+
+.MuiMenuItem-root {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+
+/*chat gpt dropdown code */
+
+.chatGptDropdown>.dropdown-toggle {
+  padding: 5px 10px 20px 15px
+}
+
+.dropdown-menu {
+  margin-top: -21px !important;
+}
+
+.chatfiletype{
+  border: 1px solid #000;
+  width: 250px;
+  margin-left: 31px;
+  margin-right: 16px;
+  padding-left: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0px 1px 1px #ffd20a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  height: 45px;
+}
